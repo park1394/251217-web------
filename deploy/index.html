@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal | My Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+        body {
+            background-color: #0d0d0d;
+            color: #00ff41; /* 매트릭스 초록색 */
+            font-family: 'Fira Code', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .terminal-window {
+            width: 90%;
+            max-width: 600px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 20px 50px rgba(0,255,65,0.2);
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .terminal-header {
+            background: #333;
+            padding: 10px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .red { background: #ff5f56; }
+        .yellow { background: #ffbd2e; }
+        .green { background: #27c93f; }
+
+        .terminal-body {
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .command { color: #fff; }
+        .response { color: #00ff41; margin-bottom: 15px; }
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 15px;
+            background: #00ff41;
+            animation: blink 0.8s infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        a { color: #00ff41; text-decoration: none; border: 1px solid #00ff41; padding: 2px 5px; margin-top: 10px; display: inline-block; }
+        a:hover { background: #00ff41; color: #000; }
+    </style>
+</head>
+<body>
+
+<div class="terminal-window">
+    <div class="terminal-header">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+    </div>
+    <div class="terminal-body">
+        <div><span class="command">user@portfolio:~$</span> whoami</div>
+        <div class="response">홍길동 (Gildong Hong)</div>
+        
+        <div><span class="command">user@portfolio:~$</span> cat description.txt</div>
+        <div class="response">
+            "데이터로 세상을 해석하고,<br>
+            코드로 가치를 만드는 사람입니다."
+        </div>
+
+        <div><span class="command">user@portfolio:~$</span> ls skills/</div>
+        <div class="response">
+            - Python<br>
+            - JavaScript<br>
+            - React.js<br>
+            - SQL
+        </div>
+
+        <div><span class="command">user@portfolio:~$</span> contact --now</div>
+        <div class="response">
+            <a href="mailto:email@example.com">Send Email</a>
+            <a href="https://github.com">GitHub</a>
+        </div>
+        
+        <div><span class="command">user@portfolio:~$</span> <span class="cursor"></span></div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<head>
+    <title>WEB1 - WEB </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <h2>WEB이란 무엇인가?</h2>
+    <p style="margin-top: 40px;">
+        The World Wide Web (WWW), commonly known as the Web, is the world's dominant software platform.[1] It was
+        originally a hypertext document management system[2] accessed over the Internet.[3]
+        The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by
+        a software application called a web browser, and are published by a software application called a web server.
+        Web resources may be any type of downloaded media, but web pages are hypertext documents formatted in
+        Hypertext Markup Language (HTML). Special HTML syntax displays embedded hyperlinks with URLs, which permits
+        users
+        to navigate to other web resources. In addition to text, web pages may contain references to images, video,
+        audio, and
+        software components, which are either displayed or internally executed in the user's web browser to render pages
+        or
+        streams of multimedia conten
+    </p>
+</body>
+
+</html>
+
